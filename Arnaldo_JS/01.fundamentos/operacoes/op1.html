@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operadores - concatenação</title>
+  </head>
+  <body>
+
+    <h2 id="titulo"></h2>
+    <script>
+
+        
+      const nome = prompt("Digite seu nome: ");
+      const sobrenome = prompt("Digite seu sobrenome: ");
+
+      let mensagem = "Olá, "+ nome + " " + sobrenome + "!";
+    //retornará "Olá, nome sobrenome!"
+
+    const idade = Number(prompt("Digite sua idade: "));
+    alert(mensagem + " Você tem " + idade + " anos!");
+
+
+
+
+      document.querySelector("#titulo").innerHTML = mensagem
+    </script>
+  </body>
+</html>
