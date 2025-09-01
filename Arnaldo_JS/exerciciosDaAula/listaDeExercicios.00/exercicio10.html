@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        let valor = Number(prompt("Insira o valor do produto: "))
+        let desconto = Number(prompt("Insira o valor do desconto (%): "))
+
+        let resultado = (valor * desconto)/100;
+        let valorFinal = (valor - resultado);
+
+        alert("Valor do produto: R$" + valor + "\nValor do desconto: " + desconto + "% " + "\nResultado Final: R$" + valorFinal);
+        
+    </script>
+</body>
+</html>
