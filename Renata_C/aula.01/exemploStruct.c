@@ -21,14 +21,17 @@
     int opcao;
 
     do{
+
+    system("cls");
+
     printf("== Current Data ==\n");
-    printf(" %d / %d /%d \n", data.dia, data.mes, data.ano);
+    printf(" %d / %d / %d \n", data.dia, data.mes, data.ano);
 
     mudaDia(&data.dia,&data.mes,&data.ano);
 
     printf("== With alterations ==\n");
     printf(" %d / %d / %d \n", data.dia, data.mes, data.ano);
-
+    
     printf("Mudar mais alguma coisa?\n");
     printf("1. SIM\n");
     printf("0. NAO\n");
@@ -39,6 +42,8 @@
 
     printf("== Final Data ==\n");
     printf(" %d / %d / %d \n", data.dia, data.mes, data.ano);
+
+    printf("Encerrando... Obrigado por usar o sistema!\n");
 
     Sleep(3*1000);
 
@@ -61,12 +66,15 @@
         if(opcao == 1){
             printf("Quer mudar para qual dia?\n");
             scanf("%d", &*x);
+            system("cls");
         } else if(opcao == 2){
             printf("Quer mudar para qual mes?\n");
             scanf("%d", &*y);
+            system("cls");
         } else if(opcao == 3){
             printf("Quer mudar para qual ano?\n");
             scanf("%d", &*z);
+            system("cls");
         } else {
             printf("Tentativa inválida...\n");
         }
