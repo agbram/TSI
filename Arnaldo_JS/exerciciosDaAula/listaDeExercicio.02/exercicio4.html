@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function maior(x,y,z){
+            let maior = x;
+
+            if(y > x && y > z){
+                maior = y;
+            } else if(z > x && z > y){
+                maior = z;
+            } else {
+                maior = x;
+            }
+            console.log(maior);
+        }
+        maior(123,19,2);
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const soma = (x, y) => x + y;
+      const sub = (x, y) => x - y;
+      const mult = (x, y) => x * y;
+
+      // Função de ordem superior
+      function calcular(a, b, callback) {
+        return callback(a, b);
+      }
+
+      console.log(calcular(5, 5, soma));
+      console.log(calcular(5, 3, sub));
+      console.log(calcular(5, 3, mult));
+    </script>
+  </body>
+</html>
