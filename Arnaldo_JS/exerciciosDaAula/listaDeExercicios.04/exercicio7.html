@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const array = [10,25,30,45,50];
+
+        let c = 0;
+
+        const novoArray = array.filter(a=>{
+            return a > 29;
+        })
+
+       const soma = array.reduce((a,b) =>{
+            return a + b;
+        });
+
+        console.log(novoArray);
+        console.log(soma)
+    </script>
+</body>
+</html>
