@@ -232,7 +232,7 @@ void atualizarMusica(Musica **inicioPlaylist)
                 if (buffer[tamanho - 1] == '\n')
                     buffer[tamanho - 1] = '\0';
 
-                strcpy(musicaAtual->artista, buffer); // ✅ apenas copia
+                strcpy(musicaAtual->artista, buffer);
             }
 
             else
@@ -253,18 +253,18 @@ void atualizarMusica(Musica **inicioPlaylist)
         printf("\nMusica nao encontrada\n"); // Informa se não encontrou a música
 }
 
-void informacoesPlaylist(Musica *inicioPlaylist) // ✅ Alterado para ponteiro simples
+void informacoesPlaylist(Musica *inicioPlaylist) 
 {
     limpar_tela();
     int qtdMusicas = 0, totalDuracao = 0;
     printf("==== Informacoes da playlist ====\n");
 
-    Musica *musicaAtual = inicioPlaylist; // ✅ Usando parâmetro diretamente
+    Musica *musicaAtual = inicioPlaylist; 
 
     if (musicaAtual == NULL)
     {
         printf("\nPlaylist vazia");
-        aguardar_tecla(); // ✅ Adicione pausa mesmo quando vazia
+        aguardar_tecla(); 
         return;
     }
 
