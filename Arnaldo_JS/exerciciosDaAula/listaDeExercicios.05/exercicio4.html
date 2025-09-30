@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const Pessoa = {
+        nome: "Ana",
+        idade: 25,
+        cidade: "São Paulo",
+      };
+       
+      for (let [p,value] of Object.entries(Pessoa)) {
+        console.log(`${p}: ${value}`);
+      }
+    </script>
+  </body>
+</html>
