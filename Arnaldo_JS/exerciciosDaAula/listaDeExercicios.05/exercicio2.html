@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function Pessoa(nome, idade, profissao) {
+        this.nome = nome;
+        this.idade = idade;
+        this.profissao = profissao;
+        this.saudar = function() {
+          return "Olá, meu nome é " + this.nome;
+        };
+      }
+      const p1 = new Pessoa("Gustavo", 20, "Desenvolvedor");
+      const p2 = new Pessoa("Bernardo", 10, "Estudante");
+
+      console.log(p1.saudar());
+      console.log(p2.saudar());
+    </script>
+  </body>
+</html>

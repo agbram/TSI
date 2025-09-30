@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    class ContaBancaria {
+  constructor(titular, saldo) {
+    this.saldo = saldo;
+    this.titular = titular;
+  }
+
+  depositar(valor) {
+    this.saldo += valor;
+    return valor;
+  }
+
+  sacar(valor) {
+    if (valor > this.saldo) {
+      console.log("Saldo insuficiente!");
+      return 0;
+    }
+    this.saldo -= valor;
+    return valor;
+  }
+}
+
+const conta1 = new ContaBancaria("Gustavo", 156.60);
+console.log("Titular: " + conta1.titular);
+console.log("Saldo Inicial: " + conta1.saldo);
+
+let deposito = conta1.depositar(200);
+
+console.log("\nTransferencia recebida: R$" + deposito);
+console.log("Saldo atual: " + conta1.saldo);
+
+let saque = conta1.sacar(500);
+
+saque = conta1.sacar(100);
+
+console.log("\nTransferência realizada: R$" + saque);
+console.log("\nSaldo atual: " + conta1.saldo);
+
+console.log("\n\n=== Resumo final===\nUser: "+ conta1.titular +"\nSaldo final: "+conta1.saldo+"\nValores recebidos: " + deposito+"\nValores enviados: "+saque);
+  </script>
+</body>
+</html>

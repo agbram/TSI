@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const carro = {
+        marca: "Mercedes-benz",
+        modelo: "C300",
+        ano: 2025,
+      };
+      console.log(carro);
+
+      carro.cor = "Preto";
+
+      console.log(carro);
+
+      console.log(carro.marca);
+      console.log(carro.modelo);
+
+      function detalhes() {
+        console.log("Marca: " + carro.marca+ "\nModelo: " + carro.modelo + "\nAno: " + carro.ano + "\nCor: " + carro.cor);
+      }
+      detalhes();
+
+    </script>
+  </body>
+</html>
