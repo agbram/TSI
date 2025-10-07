@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function compareDate() {
+        const hoje = new Date();
+
+        const nasc = document.querySelector("#data").value;
+
+        let gmt = "T00:00:00-03:00";
+
+        const dnasc = new Date(nasc + gmt);
+
+        //comparar datas
+
+        if (dnasc > hoje) {
+          console.log("Não pode!");
+          return false;
+        }
+
+        console.log("Data válida: " + dnasc.toLocaleString("pt-BR", { timeZone: "America/Sao_Paulo" }));
+
+        return false;
+      }
+      function getDate() {
+        const d = document.getElementById("data").value;
+
+        let gmt = "T00:00:00-03:00";
+
+        const data1 = new Date(d + gmt);
+        console.log("Data capturada: " + data1);
+
+        return false;
+      }
+    </script>
+
+    <!-- <form action="#" method="post" onsubmit="return getDate();"> -->
+    <form action="#" method="post" onsubmit="return compareDate();">
+      <label for="data">Data de nascimento: </label>
+      <input type="date" name="data" id="data" />
+      <br />
+      <input type="submit" value="Enviar" />
+    </form>
+  </body>
+</html>

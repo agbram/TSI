@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+</head>
+<body>
+    <button id="botao1">
+        Mudar Background
+    </button>
+
+    <script>
+
+        function mudaBack(){
+            document.body.style.backgroundColor = 'yellow';
+        }
+        let botao = document.querySelector('#botao1');
+        botao.addEventListener('click', mudaBack);
+        botao.addEventListener('click', function(e) {
+            console.log(e.target);
+            console.log(e.type);
+            console.log(e.currentTarget);
+        });
+
+        document.addEventListener('keypress', function(e){
+            console.log(e.key);
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //pegar data atual
+        const hoje = Date();
+
+        console.log(hoje);
+
+        //criar um date a partir de uma data
+
+        const d1 = new Date('October 01, 2010, 11:13:00');
+        console.log(d1);
+        
+        //Data inserida com GMT-0000.
+        //Ao imprimir, é usado o GMT do navegador (Brasilia)
+
+        const d2 = new Date('2000-12-01')
+        console.log(d2);
+        
+        //inserir a data especificando o GMT
+        const d3 = new Date("2000-12-01T00:00:00-02:00");
+        console.log(d3);
+        
+        //inserir a data por ms
+        
+        const d4 = new Date(1000000000)
+        console.log(d4);
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="alert('inspeção concluída')">Clique aqui</button>
+
+    <br />
+
+    <div
+      id="demo"
+      onclick="document.querySelector('#demo').innerHTML = 'Clicou!'"
+    >
+      Clique aqui
+    </div>
+
+    <h1 onmouseover="document.querySelector('h1').style.color = 'red'">
+      Titulo
+    </h1>
+
+    <script>
+      function mudaParagrafo() {
+        let p = document.querySelector("#par");
+        p.style.backgroundColor = "green";
+        p.style.color = "blue";
+      }
+    </script>
+
+    <p id="par" onclick="mudaParagrafo();">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis autem
+      aspernatur, aperiam mollitia laudantium, id, dicta voluptas minus deserunt
+      fugiat expedita eligendi. Maxime impedit, fugiat iusto repellendus ipsa
+      hic asperiores!
+    </p>
+  </body>
+</html>

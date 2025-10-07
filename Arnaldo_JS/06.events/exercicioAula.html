@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="paragrafo">Esse parágrafo muda de cor...</p>
+    <button type="submit" id="botao1">Enviar</button>
+
+    <script>
+      document.addEventListener("keypress", function (e) {
+        alert(e.key);
+      });
+      let botao = document.querySelector("#botao1");
+
+      botao.addEventListener("click", mostraData);
+
+      function mostraData() {
+        let d = Date();
+
+        alert("Data capturada: " + d);
+      }
+
+      let p = document.querySelector("#paragrafo");
+
+      p.addEventListener("mouseover", function () {
+        p.style.color = "red";
+      });
+
+      p.addEventListener("mouseout", function () {
+        p.style.color = "black"; // volta à cor original
+      });
+    </script>
+  </body>
+</html>
