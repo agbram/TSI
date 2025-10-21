@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <button id="botao">Clique aqui</button>
+    </div>
+
+    <script>
+        document.getElementById("botao").onclick = function(e){
+            const p = document.createElement('p');
+            p.innerHTML = "olá pessoal";
+            const botao = e.target;
+
+            botao.parentElement.replaceChild(p, botao);
+        }
+    </script>
+</body>
+</html>
