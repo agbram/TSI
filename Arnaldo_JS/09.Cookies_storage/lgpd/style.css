@@ -1,0 +1,43 @@
+.banner{
+    background-color: burlywood;
+    color: white;
+    width: 350px;
+    padding: 16px;
+    position: fixed;
+    left: 1;
+    bottom: 0;
+    margin-bottom: 10px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+}
+
+.mensagem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao{
+    background: black;
+  color: #ffffff;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  padding: 9px 18px;
+  cursor: pointer;
+  transition: all 0.22s ease;
+  margin-top: 12px;
+  font-size: 0.9rem;
+  display: flex;
+}
+
+.botao:hover{
+background-color: gray;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(64, 39, 39, 0.25);
+}
+

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Consultas CEP</title>
+  </head>
+  <body>
+    <header>
+      <h1>Consultas CEP</h1>
+    </header>
+
+    <main>
+      <form action="" method="get">
+        <fieldset>
+          <legend>Endereço</legend>
+
+          <p>
+            <label for="cep">CEP</label><br />
+            <input type="text" name="cep" id="cep" />
+          </p>
+          <p>
+            <label for="log">Logradouro</label>
+            <input type="text" name="log" id="log" disabled />
+          </p>
+          <p>
+            <label for="bairro">Bairro</label>
+            <input type="text" name="bairro" id="bairro" disabled />
+        </p>
+            <label for="cidade">Cidade</label>
+         <input type="text" name="cidade" id="cidade" disabled />
+         <p>   
+             <label for="estado">Estado</label>
+             <input type="text" name="estado" id="estado" disabled />
+          </p>
+          <p>
+            <input type="submit" value="Enviar">
+          </p>
+        </fieldset>
+      </form>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
