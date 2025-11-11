@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Validação</title>
+  </head>
+  <body>
+    <form action="" method="get" id="myform" novalidate>
+      <p>
+        <label for="name">Name</label><br />
+        <input type="text" name="name" id="name" pattern="[a-zA-z]+"/>
+        <span id="name-error" class="error"></span>
+      </p>
+
+      <p>
+        <label for="email">Email</label><br />
+        <input type="email" name="email" id="email" />
+        <span id="email-error" class="error"></span>
+      </p>
+
+      <p>
+        <label for="password">Password</label><br />
+        <input type="password" name="password" id="password" pattern="(?=.*[A-Z])(?=.*\d).{6,}" />
+        <span id="password-error" class="error"></span>
+      </p>
+
+      <p>
+        <label for="cPassword">Confirm your password</label><br />
+        <input type="password" name="cPassword" id="cPassword" required/>
+        <span id="cPassword-error" class="error"></span>
+      </p>
+
+      <p>
+        <button type="submit">Send</button>
+      </p>
+    </form>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
